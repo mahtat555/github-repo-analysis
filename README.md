@@ -120,6 +120,10 @@ to view the app.
 
 	*for all languages :* Visit [http://localhost:8000/api/popularity/](http://127.0.0.1:8000/api/popularity/)
 
+
+	<img src='challenges/img/popularity.png'/>
+
+	
 	*Example :*
 		for Python language : [http://localhost:8000/api/popularity/?language=Python](http://localhost:8000/api/popularity/?language=Python)
 

@@ -57,9 +57,10 @@ It is best to use the python `virtualenv` tool to build locally:
 $ git clone https://github.com/mahtat555/REST-microservice-example-using-Django
 $ cd REST-microservice-example-using-Django
 $ pip install virtualenv
-$ virtualenv -p python3 python3 venv
+$ virtualenv -p python3 venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
+$ cd challenges
 $ python manage.py runserver
 ```
 

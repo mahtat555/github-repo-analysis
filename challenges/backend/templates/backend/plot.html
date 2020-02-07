@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Framework popularity over the 100 repositories </title>
+</head>
+<body>
+  <div id="container"></div>
+  <script src="https://code.highcharts.com/highcharts.src.js"></script>
+  <script>
+    Highcharts.chart('container', {
+        chart: {
+            type: '{{ type }}'
+        },
+        title: {
+            text: 'Framework popularity over the 100 repositories'
+        },
+        xAxis: {
+            categories: {{ languages|safe }}
+        },
+        series: [{
+            name: "plot",
+            data: {{ popularity|safe }}
+          }
+        ]
+    });
+  </script>
+</body>
+</html>

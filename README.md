@@ -6,7 +6,7 @@
 
 This is an example REST API uses [Django](https://www.djangoproject.com/). Has as objective is to list the languages used by the 100 trending public repositories on GitHub.
 
-**This example is written with [python3](https://www.python.org/) and Django 3.0.3.**
+**This example is written with [python3](https://www.python.org/) and Django 3.2.7.**
 
 <rb>
 
@@ -54,13 +54,14 @@ This is an example REST API uses [Django](https://www.djangoproject.com/). Has a
 It is best to use the python `virtualenv` tool to build locally:
 
 ```sh
-$ git clone https://github.com/mahtat555/REST-microservice-example-using-Django
-$ cd REST-microservice-example-using-Django
+$ git clone https://github.com/mahtat555/github-repo-analysis
+$ cd github-repo-analysis
 $ pip install virtualenv
 $ virtualenv -p python3 venv
 $ source venv/bin/activate
 $ pip install -r requirements.txt
 $ cd challenges
+$ python manage.py migrate
 $ python manage.py runserver
 ```
 
@@ -123,7 +124,7 @@ to view the app.
 
 	<img src='challenges/img/popularity.png'/>
 
-	
+
 	*Example :*
 		for Python language : [http://localhost:8000/api/popularity/?language=Python](http://localhost:8000/api/popularity/?language=Python)
 
